@@ -4,8 +4,8 @@ function CourseList() {
   return (
     <div className="list">
       <h2>List of course</h2>
-      {courses.map((course) => {
-        return <p> {course} </p>;
+      {courses.map((course, index) => {
+        return <p key={index}> {course} </p>;
       })}
     </div>
   );
